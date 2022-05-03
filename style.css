@@ -143,9 +143,9 @@ button:hover {
     background: linear-gradient(#ff54a2, #ff575a);
     border-radius: 20px 0 0 20px;
     height: 100%;
-    width: 80%;
+    width: 70%;
     z-index: -1;
-    transform: translateX(150px);
+    transform: translateX(205px);
 }
 
 .add-btn img {
@@ -192,5 +192,28 @@ button:hover {
     #menuList {
         overflow: hidden;
         transition: 0.5s;
+    }
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller {
+        width: 77%;
+    }
+    .color-box {
+        transform: translateX(75px);
+    }
+    .col-1 {
+        flex-basis: 100%;
+    }
+    .col-1 h2 {
+        font-size: 35px;
+    }
+    .col-1 h3 {
+        font-size: 35px;
     }
 }
