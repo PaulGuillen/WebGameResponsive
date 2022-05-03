@@ -12,14 +12,14 @@
         <div class="navbar">
             <img src="images/logo.png" class="logo">
             <nav>
-                <ul>
+                <ul id="menuList">
                     <li><a href="">Controladores de Juegos</a></li>
                     <li><a href="">Accesorios VR</a></li>
                     <li><a href="">Contenido Remoto</a></li>
                     <li><a href="">Otros</a></li>
                 </ul>
             </nav>
-            <img src="images/menu.png" class="menu-icon">
+            <img src="images/menu.png" class="menu-icon" onClick="togglemenu()">
         </div>
 
         <div class="row">
@@ -48,6 +48,20 @@
             <img src="images/ig.png">
         </div>
     </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 
 </html>
